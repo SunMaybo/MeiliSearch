@@ -1,0 +1,20 @@
+{
+    "rankingRules": [
+      "typo",
+      "words",
+      "proximity",
+      "attribute",
+      "wordsPosition",
+      "exactness"
+    ],
+    "distinctAttribute": null,
+    "searchableAttributes": [
+      "*"
+    ],
+    "displayedAttributes": [
+      "*"
+    ],
+    "stopWords": [],
+    "synonyms": {},
+    "attributesForFaceting": []
+  }

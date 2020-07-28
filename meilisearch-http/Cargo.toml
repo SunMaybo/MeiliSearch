@@ -28,6 +28,7 @@ crossbeam-channel = "0.4.2"
 env_logger = "0.7.1"
 flate2 = "1.0.16"
 futures = "0.3.4"
+heed = "0.8.0"
 http = "0.1.19"
 indexmap = { version = "1.3.2", features = ["serde-1"] }
 log = "0.4.8"
@@ -37,6 +38,7 @@ meilisearch-error = { path = "../meilisearch-error", version = "0.14.1" }
 meilisearch-schema = { path = "../meilisearch-schema", version = "0.14.1" }
 meilisearch-tokenizer = {path = "../meilisearch-tokenizer", version = "0.14.1"}
 mime = "0.3.16"
+once_cell = "1.4.1"
 rand = "0.7.3"
 regex = "1.3.6"
 rustls = "0.18"
