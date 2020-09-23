@@ -25,6 +25,7 @@ impl Deref for Data {
 pub struct DataInner {
     pub db: Arc<Database>,
     pub db_path: String,
+    pub backup_path: String,
     pub api_keys: ApiKeys,
     pub server_pid: u32,
     pub http_payload_size_limit: usize,
@@ -57,6 +58,7 @@ impl ApiKeys {
 impl Data {
     pub fn new(opt: Opt) -> Result<Data, Box<dyn Error>> {
         let db_path = opt.db_path.clone();
+        let backup_path = opt.backup_path.clone();
         let server_pid = std::process::id();
 
         let db_opt = DatabaseOptions {
@@ -79,6 +81,7 @@ impl Data {
         let inner_data = DataInner {
             db: db.clone(),
             db_path,
+            backup_path,
             api_keys,
             server_pid,
             http_payload_size_limit,
